@@ -4,8 +4,6 @@ import { useState } from "react";
 import { apps } from "../data/apps";
 import { stats } from "../data/stats";
 import { App, SortMethod } from "../types";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import StatCard from "@/components/StatCard";
 import AppsTable from "@/components/AppsTable";
 import FeaturesTable from "@/components/FeaturesTable";
@@ -45,8 +43,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-between min-h-screen bg-gray-50">
-      <Header />
-
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-2">
@@ -117,8 +113,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

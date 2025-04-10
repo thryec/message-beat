@@ -1,11 +1,6 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-
+    <div className="flex flex-col justify-between min-h-screen bg-gray-50">
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">About MessageBeat</h1>
 
@@ -42,8 +37,6 @@ export default function AboutPage() {
           </p>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
