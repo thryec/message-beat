@@ -12,6 +12,16 @@ export default function MethodologyPage() {
             <li>Privacy and security assessments</li>
             <li>Decentralization metrics</li>
           </ul>
+
+          <h2 className="text-xl font-bold mt-6 mb-3">
+            Decentralization Metrics
+          </h2>
+
+          <p className="mb-4">[parameters used for decentralisation scores]</p>
+
+          <h2 className="text-xl font-bold mt-6 mb-3">Privacy Metrics</h2>
+
+          <p className="mb-4">[breakdown of privacy methods]</p>
         </div>
       </main>
     </div>

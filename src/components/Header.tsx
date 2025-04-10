@@ -10,16 +10,10 @@ export default function Header() {
           </div>
           <nav className="hidden md:flex space-x-6">
             <Link
-              href="/protocols"
+              href="/privacy"
               className="text-gray-800 hover:text-blue-600 transition"
             >
-              Protocols
-            </Link>
-            <Link
-              href="/features"
-              className="text-gray-800 hover:text-blue-600 transition"
-            >
-              Features
+              Privacy Technologies
             </Link>
             <Link
               href="/methodology"

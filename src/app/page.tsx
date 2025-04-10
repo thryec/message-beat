@@ -72,7 +72,7 @@ export default function Home() {
         </div>
 
         <div className="bg-white rounded-lg shadow mb-8 overflow-hidden">
-          <div className="flex flex-col sm:flex-row justify-between items-center p-4 border-b">
+          <div className="flex flex-col sm:flex-row justify-between items-center p-4 border-b border-gray-200">
             <h2 className="text-xl font-bold mb-3 sm:mb-0">
               Decentralized Messaging Apps
             </h2>
