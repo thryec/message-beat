@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col justify-between min-h-screen bg-gray-50">
+    <div className="flex flex-col justify-between min-h-screen bg-gray-50 text-gray-700">
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-2">

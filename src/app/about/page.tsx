@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <div className="flex flex-col justify-between min-h-screen bg-gray-50">
+    <div className="flex flex-col justify-between min-h-screen bg-gray-50 text-gray-700">
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">About MessageBeat</h1>
 
@@ -21,15 +21,6 @@ export default function AboutPage() {
             researchers understand the current state of decentralized messaging
             technology.
           </p>
-
-          <h2 className="text-xl font-bold mt-6 mb-3">Methodology</h2>
-          <p>Our rankings and assessments are based on a combination of:</p>
-          <ul className="list-disc ml-6 mt-2 mb-4 space-y-1">
-            <li>Public user statistics and download numbers</li>
-            <li>Technical analysis of protocols and implementations</li>
-            <li>Privacy and security assessments</li>
-            <li>Decentralization metrics</li>
-          </ul>
 
           <p className="mt-6 text-gray-600 italic">
             For more information about how we gather and analyze data, please
