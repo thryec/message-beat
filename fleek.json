@@ -1,0 +1,27 @@
+{
+  "site": {
+    "id": "message-beat",
+    "name": "early-death-millions",
+    "platform": "ipfs",
+    "buildCommand": "npm install && npm run build",
+    "buildDir": ".fleek/static",
+    "publicDir": "public"
+  },
+  "functions": [
+    {
+      "name": "next-app",
+      "id": "next-app-function",
+      "path": ".fleek/dist/index.js",
+      "bundle": false,
+      "assets": ".fleek/static"
+    }
+  ],
+  "hosting": [
+    {
+      "name": "IPFS",
+      "site": "${site.id}",
+      "path": "*",
+      "function": "next-app"
+    }
+  ]
+}
