@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MessageBeat
+
+A comprehensive dashboard for tracking and comparing decentralized messaging applications, built with Next.js and TypeScript.
+
+![MessageBeat Screenshot](public/screenshot.png)
+
+## Overview
+
+MessageBeat provides visibility into the decentralized messaging landscape by tracking:
+
+- User adoption metrics
+- Decentralization levels
+- Privacy features
+- Protocol details
+- Business models
+
+Similar to how L2Beat tracks Layer 2 solutions for blockchain, MessageBeat helps users understand and compare messaging alternatives beyond centralized services.
+
+## Features
+
+- Interactive sorting and filtering of messaging apps
+- Visual indicators for privacy and decentralization levels
+- Detailed comparison of critical privacy features
+- Responsive design for desktop and mobile
+- Type-safe implementation with TypeScript
+
+## Tech Stack
+
+- Next.js 14 with App Router
+- TypeScript
+- Tailwind CSS
+- React Hooks
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v18.17 or newer)
+- npm or Yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/decentral-chat-tracker.git
+cd decentral-chat-tracker
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+decentral-chat-tracker/
+├── src/
+│   ├── app/                 # App Router pages
+│   ├── components/          # Reusable UI components
+│   ├── data/                # Application data
+│   └── types/               # TypeScript interfaces
+├── public/                  # Static assets
+└── ...config files
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Build the application for production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+# or
+yarn build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then start the production server:
 
-## Deploy on Vercel
+```bash
+npm start
+# or
+yarn start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Or deploy to platforms like Vercel, Netlify, or any other hosting service that supports Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Here's how you can contribute:
+
+1. **Fork the repository**
+   - Create a personal copy of the project on your GitHub account
+
+2. **Set up your environment**
+   - Follow the installation steps above
+   - Make sure everything builds correctly
+
+3. **Create a feature branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+4. **Make your changes**
+   - Add or update features
+   - Update documentation if needed
+   - Add new messaging apps or update existing data
+
+5. **Follow coding standards**
+   - Use TypeScript for type safety
+   - Format your code with Prettier
+   - Ensure your code passes ESLint checks
+
+6. **Test your changes**
+   - Make sure the application works as expected
+   - Test on different screen sizes for responsiveness
+
+7. **Submit a pull request**
+   - Push your changes to your fork
+   - Create a pull request to the main repository
+   - Describe your changes in detail
+   - Link any related issues
+
+### Updating App Data
+
+To add a new messaging app or update existing data:
+
+1. Edit the `src/data/apps.ts` file
+2. Follow the `App` interface structure in `src/types/index.ts`
+3. Make sure to include all required properties
+4. Update `src/data/stats.ts` if total numbers have changed
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
