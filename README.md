@@ -140,6 +140,9 @@ To add a new messaging app or update existing data:
 3. Make sure to include all required properties
 4. Update `src/data/stats.ts` if total numbers have changed
 
+### Deployed IPFS CID 
+QmV1NEzTt9otzaSQ4zK1EpnsqhoXaCB98Zuh9i1ENJ5bjD
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
