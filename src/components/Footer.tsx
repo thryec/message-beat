@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 py-10 text-gray-700">
@@ -16,76 +14,37 @@ export default function Footer() {
           </div>
           <div className="flex flex-col sm:flex-row gap-8">
             <div>
-              <h3 className="font-semibold mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/methodology"
-                    className="text-gray-600 hover:text-blue-600 text-sm"
-                  >
-                    Methodology
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/metrics"
-                    className="text-gray-600 hover:text-blue-600 text-sm"
-                  >
-                    Privacy Metrics
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/criteria"
-                    className="text-gray-600 hover:text-blue-600 text-sm"
-                  >
-                    Ranking Criteria
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/sources"
-                    className="text-gray-600 hover:text-blue-600 text-sm"
-                  >
-                    Data Sources
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
               <h3 className="font-semibold mb-4">About</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
-                    href="/team"
+                  <a
+                    href="mailto:0xcurate@gmail.com"
                     className="text-gray-600 hover:text-blue-600 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Team
-                  </Link>
+                    Email me: 0xcurate@gmail.com
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/blog"
+                  <a
+                    href="https://x.com/thryec"
                     className="text-gray-600 hover:text-blue-600 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Blog
-                  </Link>
+                    Twitter/X
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/contact"
+                  <a
+                    href="https://github.com/thryec/message-beat"
                     className="text-gray-600 hover:text-blue-600 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contribute"
-                    className="text-gray-600 hover:text-blue-600 text-sm"
-                  >
-                    Contribute
-                  </Link>
+                    Github
+                  </a>
                 </li>
               </ul>
             </div>
